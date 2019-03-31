@@ -12,13 +12,25 @@
     <title>Prezentacija</title>
 
     <style>
-        
+        *{
+          box-sizing: border-box;
+      }
+        img{
+            width: 50%;
+            height: 50%;
+            
+        }
+
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+          background-color: teal;
+      }
     </style>
 </head>
 
 <body>
-    <h1 class="display-2 bg-info text-center">Kratka biografija</h1>
-    <nav class="navbar bg-dark navbar-dark">
+        
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top">
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseid">
                     <span class="navbar-toggler-icon"></span>
         
@@ -26,22 +38,72 @@
             <div class="collapse navbar-collapse" id="collapseid">
         <ul class="navbar-nav">
                 <li class="nav-item">
-                        <a class="nav-link" href="#">Saznajte vise</a>
+                        <a class="nav-link" href="https://rs.linkedin.com/">Saznajte vise</a>
                     </li>
         
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Galerija</a>
+                        <a class="nav-link" href="https://www.pexels.com/collections/beautiful-sunsets-ftqw125/">Galerija</a>
                     </li>
 
 
         </ul>
         </div>
 
+        
+
     </nav>
+    <h1 class="display-2 bg-info text-center mt-5">Kratka biografija</h1>
+
+    <div id="c" class="carousel slide text-center" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#c" data-slide-to="0" class="active"></li>
+                <li data-target="#c" data-slide-to="1"></li>
+                <li data-target="#c" data-slide-to="2"></li>
+    
+    
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="C:\Users\Korisnik\Desktop\pexels-photo-462064.jpeg" alt="">
+                    <div class="carousel-caption">
+                        <h1>Zalazak sunca</h1>
+                        
+                    </div>
+    
+                </div>
+    
+                <div class="carousel-item">
+                        <img src="C:\Users\Korisnik\Desktop\pexels-photo-552779.jpeg" alt="">
+                        <div class="carousel-caption">
+                            <h1>Pruga</h1>
+                            
+                        </div>
+        
+                </div>
+
+                <div class="carousel-item">
+                        <img src="C:\Users\Korisnik\Desktop\pexels-photo-797673.jpeg" alt="">
+                        <div class="carousel-caption">
+                            <h1>Bicikl na livadi</h1>
+                            
+                        </div>
+        
+                </div>
+                <a class="carousel-control-prev" href="#c" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+        
+                <a class="carousel-control-next" href="#c" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                </a>
+                </div>
+                </div>
+
+    
     <form class="bg-light">
         <div class="form-group">
 
-            <div class="p-5 m-5" style="border: 2px solid teal; ">
+            <div class="p-5 m-5" style="border: 2px solid teal">
             <h2>Licni podaci:</h2>
             <p> Ime i prezime: Ivana Stankovic <br>
             Datum rodjenja: 19.05.1988. <br>
@@ -58,7 +120,7 @@
                     <li>Filmovi</li>
                     <li>Setnje</li>
                     <li>TV serije</li>
-
+                    <li>Fotografija</li>
 
 
                 </ul>
